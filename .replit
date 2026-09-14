@@ -1,5 +1,6 @@
 entrypoint = "run.py"
 modules = ["python-3.11"]
+run = ["python3", "run.py"]
 
 [nix]
 channel = "stable-24_05"
@@ -7,9 +8,6 @@ channel = "stable-24_05"
 [unitTest]
 language = "python3"
 
-[gitHubImport]
-requiredFiles = [".replit", "replit.nix"]
-
 [deployment]
-run = ["python3", "main.py"]
+run = ["python3", "run.py", "--mode", "auto", "--interval", "60"]
 deploymentTarget = "cloudrun"
