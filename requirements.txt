@@ -1,0 +1,9 @@
+# Mirrors [tool.poetry.dependencies] in pyproject.toml for pip users
+cdp-sdk>=0.21.0,<0.22
+swarm @ git+https://github.com/openai/swarm.git
+openai>=1.52.2,<2
+web3>=7.2.0,<8
+requests>=2.32.3,<3
+tweepy>=4.14.0,<5
+python-dotenv>=1.0.1,<2
+pytest>=8.3.3,<9
